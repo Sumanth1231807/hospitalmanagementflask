@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+     
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 col-xxl-6">
+                <form action="/dash" method="post">
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <td>Patient Name</td>
+                            <td><input name="name" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Number</td>
+                            <td><input name="mno" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td><input name="age" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><input name="add" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td><input name="dob" type="date" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Place</td>
+                            <td><input name="place" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Pincode</td>
+                            <td><input name="pin" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit" class="btn btn-secondary">Register</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
